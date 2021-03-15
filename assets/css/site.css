@@ -1,0 +1,28 @@
+@media only screen and (max-width: 640px)
+{
+    .index-banner {
+        /*background-image: url('../img/index-banner-mobile.png');*/
+    }
+
+    .navbar-logo {
+        width: 80px;
+        height: 80px;
+        content: attr('../img/logo.png')
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 800px)
+{
+
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1024px) 
+{
+
+}
+
+@media only screen and (min-width: 1025px) {
+    .index-banner {
+        background-image: url('../img/index-banner-desktop.png');
+    }
+}
