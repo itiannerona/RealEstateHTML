@@ -1,9 +1,7 @@
-name: Jekyll site CI
+name: HTML static site CI
 
 on:
   push:
-    branches: [ master ]
-  pull_request:
     branches: [ master ]
 
 jobs:
@@ -12,9 +10,4 @@ jobs:
     runs-on: self-hosted
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Clean up folder and replace with new files
-    #  run: |
-    #    docker run \
-    #    -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-    #    jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --future"
+      - run: echo 'New deployment'
