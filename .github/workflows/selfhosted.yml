@@ -1,0 +1,13 @@
+name: HTML static site CI
+
+on:
+  push:
+    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: self-hosted
+
+    steps:
+      - run: echo 'New deployment'
